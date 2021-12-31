@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZilla</title>
+    <link rel="stylesheet" href="dist/css/style.css" class="src">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+           <div class="nav__container">
+                <a href="#" class="nav__container-logo">
+                    <!-- <img src="dist/Images/logo.png" alt="BookZilla">
+                     -->
+                     <span>movieZilla</span>
+                </a>
+                <div>
+                    <img src="./dist/Images/search.svg" alt="no img" id="searchImg">
+                   <input type="tel" name="search" id="search" placeholder="Genre">
+                </div>
+           </div>
+            <a href="#" class="header__menu">
+                <span class="header__menu-burger"></span>
+                <span class="header__menu-burger"></span>
+                <span class="header__menu-burger"></span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="main__aside">
+            <span class="main__aside-heads">Browse</span>
+            <ul class="main__aside-uls">
+                <li class="main__aside-uls-items"><a href="#">Top Movies</a></li>
+                <li class="main__aside-uls-items"><a href="#">Discover</a></li>
+                <li class="main__aside-uls-items"><a href="#">Categories</a></li>
+            </ul>
+            <span class="main__aside-heads">Your Movies</span>
+            <ul class="main__aside-uls">
+                <li class="main__aside-uls-items"><a href="#">Reading</a></li>
+                <li class="main__aside-uls-items"><a href="#">Favorite</a></li>
+                <li class="main__aside-uls-items"><a href="#">History</a></li>
+            </ul>
+            <span class="main__aside-heads">Shelves</span>
+            <ul class="main__aside-uls">
+                <li class="main__aside-uls-items"><a href="#">Your Shelves</a></li>       
+            </ul>
+            <span id="button">Create a shelf</span>
+        </aside>
+        <section class="main__section">
+            
+            <div class="main__section-one">
+                
+                <h2>Recently added</h2>
+                <div class="main__section-one-books">
+                    <div class="paddles">
+                        <button class="left-paddle opacity"><</button>
+                        <button class="right-paddle opacity">></button>
+                    </div>
+                   
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/jobs.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/radical.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/enders.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/perks.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/hobbit.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/holby.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/coral.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                         </div>
+                    </div>
+                    <div class="main__section-one-books-card">
+                        <img src="dist/Images/jobs.jpg" alt="" >
+                        <h4><b>Steve Jobs</b></h4>
+                        <p>Walter Isaacson</p>
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__section-two">
+                    <video src="dist/video/chrome.webm" type="video/webm" controls>
+                        <p>Your browser doesn't support windows</p>
+                    </video>
+                </div>
+         </section>
+    
+    <script src="dist/js/main.js"></script>
+</body>
+</html>

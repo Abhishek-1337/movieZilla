@@ -1,0 +1,81 @@
+.header{
+    height:8vh;
+    width:100%;
+    background-color: white;
+    position:fixed;
+    top:0;
+    padding:0.75rem;
+   
+    
+    .nav{
+      
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        &__container{
+
+            width:20%;
+            display:flex;
+            justify-content: space-between;
+            position:relative;
+
+            &-logo{
+                border-right: 2px solid rgb(10, 10, 10, 0.3) ;
+                padding-right:0.78rem;
+                margin-right: 1rem;
+                font-family: 'Great Vibes', cursive;
+                color:green;
+                align-self: center;
+                font-size:1.45rem;
+
+            }
+
+            div{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            #search{
+                /* position:relative;*/
+                height:1.5rem;
+                width:6.75rem; 
+                text-align: center;
+              /*   position:absolute;
+                top:1rem; */
+                border-radius: 0.625rem;
+            }
+
+            #searchImg{
+                z-index: 2;
+                position:absolute;
+                right:10px;
+                width:0.629rem;
+                height:0.629rem;
+            }
+        }
+    } 
+
+
+    &__menu{
+        margin:0.75rem;
+        align-self: center;
+
+        &-burger{
+            display:block;
+            position:relative;
+            width:28px;
+            height:3px;
+            background:black;
+            
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+                     
+        }
+
+    
+    }
+}

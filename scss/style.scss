@@ -1,0 +1,165 @@
+@import 'globals', 'variables','header','video';
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 243, 241);
+    height: 100%;
+    // padding:1.9375rem 0 0.75rem 0.75rem; 
+    padding-top:5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: 'Roboto', sans-serif;
+
+    .main__aside{
+        // position:fixed;
+        display:block;
+        width:8rem;
+        padding-left: 1.2rem;
+        left: 0;
+        position: fixed;
+        &-heads{
+            display:block;
+            font-size:0.8rem;
+            color:rgba(10,10,10,0.5);
+            text-transform: uppercase;
+            padding-bottom:0.8rem;
+            
+        }
+
+        &-uls{
+            font-size:0.84rem;
+            font-weight:400;
+            padding-bottom: 1.5rem;
+            margin-bottom:1rem;
+            border-bottom:2px solid rgba(10,10,10,0.189);
+
+          
+            
+
+            &-items{
+
+                &:hover{
+                    opacity:0.7;
+                }
+                
+                &:not(:last-child){
+                    padding-bottom:0.5rem;
+                }
+
+                a{
+                    color:black;
+                }
+            }
+        }
+
+        #button{
+            cursor: pointer;
+            display:inline-block;
+            height:1.5rem;
+            width:5rem;
+            align-self: center;
+            text-align: center;
+            color:white;
+            border-radius: 5px;
+            background-color: green;
+            padding-top: 0.28rem;
+            font-size:0.7rem;
+        }
+    }
+
+    .main__section{
+        padding-top: 0.1875rem;
+        width:80vw;
+
+        
+       
+        .main__section-one{
+                height:100vh;
+            
+            h2{
+                // position: fixed;
+                font-size: 1rem;
+                color:rgba(10,10,10,0.4);
+                font-weight: 200;
+                padding-bottom:1.125rem;
+            }
+            &-books{
+                overflow:scroll;
+                display:flex;
+                flex-direction: row;
+                padding-bottom:1.7rem;
+                scroll-behavior: smooth;
+                // transition: overflow 2s ease;
+
+                .left-paddle{
+                    position:absolute;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    color:white;
+                    font-size:1.5rem;
+                    top:28%;
+                    outline: unset;
+                    left:10%;
+                    height:4rem;
+                    width:3rem;
+                    
+                    &.opacity{
+                        display:none;
+                    }
+                }
+               
+                .right-paddle{
+                    position:absolute;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    color:white;
+                    outline: unset;
+                    font-size:1.5rem;
+                    top:28%;
+                    right:10%;
+                    height:4rem;
+                    width:3rem;
+                    
+
+                    &.opacity{
+                        display:none;
+                    }
+                }
+                &-card{
+                    font-size:0.8rem;
+                    margin-right: 1.5rem;
+                    p{
+                        color:rgba(10,10,10,0.4);
+                    }
+                    
+                    img{
+                        width:157px;
+                        height:232px;
+                        padding-bottom:0.8125rem;
+                    }
+                    h4{
+                        padding-bottom: 0.135rem;
+                    }
+                    p{
+                        padding-bottom: 0.275rem;
+                    }
+
+                    .stars{
+                        .checked{
+                            color:orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main__aside-two{
+        // position:fixed;
+        padding-left:1rem;
+        right: 0;
+        position: fixed;
+    }
+}
+
