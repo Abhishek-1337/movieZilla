@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookZilla</title>
+    <title>MovieZilla</title>
     <link rel="stylesheet" href="dist/css/style.css" class="src">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
            <div class="nav__container">
-                <a href="#" class="nav__container-logo">
+                <a href="index.html" class="nav__container-logo">
                     <!-- <img src="dist/Images/logo.png" alt="BookZilla">
                      -->
                      <span>movieZilla</span>
@@ -67,7 +69,7 @@
                         <button class="right-paddle opacity">></button>
                     </div>
                    
-                    <div class="main__section-one-books-card">
+                    <a href="explore_detail.html"><div class="main__section-one-books-card">
                         <img src="dist/Images/jobs.jpg" alt="" >
                         <h4><b>Steve Jobs</b></h4>
                         <p>Walter Isaacson</p>
@@ -79,6 +81,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
+                </a>
                     <div class="main__section-one-books-card">
                         <img src="dist/Images/radical.jpg" alt="" >
                         <h4><b>Steve Jobs</b></h4>
@@ -172,5 +175,6 @@
          </section>
     
     <script src="dist/js/main.js"></script>
+    <!-- <script src="dist/js/api.js"></script> -->
 </body>
 </html>

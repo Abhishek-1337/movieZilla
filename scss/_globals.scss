@@ -20,6 +20,10 @@ body{
 a,li{
     list-style: none;
     text-decoration: none;
+    color:black;
+}
+a:visited{
+    text-decoration: none;
 }
 ::-webkit-scrollbar {
     display: none;

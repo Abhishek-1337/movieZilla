@@ -10,7 +10,7 @@ const mainSec = document.querySelector('.main__section-one-books');
 // let paddingMargin = 20;
 
 leftPaddle.addEventListener('click',()=>{
-     document.querySelector('.main__section-one-books').scrollLeft += 220;
+     document.querySelector('.main__section-one-books').scrollLeft -= 300;
 
      if(document.querySelector('.main__section-one-books').scrollLeft === 0){
           leftPaddle.classList.remove('opacity');
@@ -19,7 +19,7 @@ leftPaddle.addEventListener('click',()=>{
 });
 
 rightPaddle.addEventListener('click',()=>{
-     document.querySelector('.main__section-one-books').scrollLeft -= 220;
+     document.querySelector('.main__section-one-books').scrollLeft +=300;
      console.log(document.querySelector('.main__section-one-books').scrollLeft);
 });
 

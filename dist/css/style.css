@@ -21,6 +21,11 @@ body {
 a, li {
   list-style: none;
   text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -203,6 +208,7 @@ main .main__section .main__section-one-books .right-paddle.opacity {
   display: none;
 }
 main .main__section .main__section-one-books-card {
+  cursor: pointer;
   font-size: 0.8rem;
   margin-right: 1.5rem;
 }
