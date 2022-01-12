@@ -25,10 +25,10 @@
                      -->
                      <span>movieZilla</span>
                 </a>
-                <div>
+                <!-- <div>
                     <img src="./dist/Images/search.svg" alt="no img" id="searchImg">
                    <input type="tel" name="search" id="search" placeholder="Genre">
-                </div>
+                </div> -->
            </div>
             <a href="#" class="header__menu">
                 <span class="header__menu-burger"></span>
@@ -59,6 +59,18 @@
             <span id="button">Create a shelf</span>
         </aside>
         <section class="main__section">
+
+            <div class="upcoming_event">
+                <div class="img-slider">
+                    <div class="slide active">
+                      <img src="./dist/Images/poster.jpg" alt="">
+                      <div class="info">
+                        <h3>Upcoming movie</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                 </div>
+            </div>
             
             <div class="main__section-one">
                 
@@ -69,9 +81,9 @@
                         <button class="right-paddle opacity">></button>
                     </div>
                    
-                    <a href="explore_detail.html"><div class="main__section-one-books-card">
+                    <div class="main__section-one-books-card">
                         <img src="dist/Images/jobs.jpg" alt="" >
-                        <h4><b>Steve Jobs</b></h4>
+                        <h4><b><a href="explore_detail.html">Steve Jobs</a></b></h4>
                         <p>Walter Isaacson</p>
                         <div class="stars">
                             <span class="fa fa-star checked"></span>
@@ -81,7 +93,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
-                </a>
+              
                     <div class="main__section-one-books-card">
                         <img src="dist/Images/radical.jpg" alt="" >
                         <h4><b>Steve Jobs</b></h4>
@@ -167,14 +179,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="main__section-two">
+                <!-- <div class="main__section-two">
                     <video src="dist/video/chrome.webm" type="video/webm" controls>
                         <p>Your browser doesn't support windows</p>
                     </video>
-                </div>
+                </div> -->
          </section>
     
     <script src="dist/js/main.js"></script>
+    <script>
+        var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+
+        var repeater = () => {
+         setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    </script>
     <!-- <script src="dist/js/api.js"></script> -->
 </body>
 </html>

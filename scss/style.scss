@@ -72,6 +72,30 @@ main{
         padding-top: 0.1875rem;
         width:80vw;
 
+        .upcoming_event{
+            width:55vw;
+            margin-bottom:1rem;
+
+            .img-slider{
+                .slide{
+                    img{
+                        width:100%;
+                    }
+
+                    .info{
+                        h3{
+                            color:green;
+                            text-shadow:0.1px 0.1px 1px black;
+                            padding-bottom:0.27rem;
+                        }
+                        p{
+                            font-size:0.87rem;
+                        }
+                    }
+                }
+            }
+        }
+
         
        
         .main__section-one{
@@ -82,7 +106,7 @@ main{
                 font-size: 1rem;
                 color:rgba(10,10,10,0.4);
                 font-weight: 200;
-                padding-bottom:1.125rem;
+                padding-bottom:0.82rem;
             }
             &-books{
                 overflow:scroll;
@@ -92,44 +116,55 @@ main{
                 scroll-behavior: smooth;
                 // transition: overflow 2s ease;
 
-                .left-paddle{
-                    position:absolute;
-                    background-color: transparent;
-                    border-radius: 8px;
-                    color:white;
-                    font-size:1.5rem;
-                    top:28%;
-                    outline: unset;
-                    left:10%;
-                    height:4rem;
-                    width:3rem;
-                    
-                    &.opacity{
-                        display:none;
+                .paddles{
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    .left-paddle{
+                        position:relative;
+                        background-color: transparent;
+                        border-radius: 8px;
+                        color:white;
+                        font-size:1.5rem;
+                        top:4rem;
+                        outline: unset;
+                        height:4rem;
+                        width:3rem;
+                        
+                        &.opacity{
+                            display:none;
+                        }
                     }
-                }
-               
-                .right-paddle{
-                    position:absolute;
-                    background-color: transparent;
-                    border-radius: 8px;
-                    color:white;
-                    outline: unset;
-                    font-size:1.5rem;
-                    top:28%;
-                    right:10%;
-                    height:4rem;
-                    width:3rem;
-                    
+                   
+                    .right-paddle{
+                        position:relative;
+                        background-color: transparent;
+                        border-radius: 8px;
+                        color:rgb(255, 255, 255);
+                        outline: unset;
+                        font-size:1.5rem;
+                        top:4rem;
+                        left:27rem;
+                        height:4rem;
+                        width:3rem;
+                        
+    
+                        &.opacity{
+                            display:none;
+                        }
+                    }
 
-                    &.opacity{
-                        display:none;
-                    }
                 }
+
+                
                 &-card{
-                    cursor:pointer;
+                    
                     font-size:0.8rem;
                     margin-right: 1.5rem;
+                    a{
+                        cursor:pointer;
+                    }
                     p{
                         color:rgba(10,10,10,0.4);
                     }

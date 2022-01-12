@@ -25,7 +25,8 @@ a, li {
 }
 
 a:visited {
-  text-decoration: none;
+  -webkit-text-decoration: none3;
+          text-decoration: none3;
 }
 
 ::-webkit-scrollbar {
@@ -59,28 +60,6 @@ a:visited {
   color: green;
   align-self: center;
   font-size: 1.45rem;
-}
-.header .nav__container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.header .nav__container #search {
-  /* position:relative;*/
-  height: 1.5rem;
-  width: 6.75rem;
-  text-align: center;
-  /*   position:absolute;
-    top:1rem; */
-  border-radius: 0.625rem;
-}
-.header .nav__container #searchImg {
-  z-index: 2;
-  position: absolute;
-  right: 10px;
-  width: 0.629rem;
-  height: 0.629rem;
 }
 .header__menu {
   margin: 0.75rem;
@@ -161,6 +140,21 @@ main .main__section {
   padding-top: 0.1875rem;
   width: 80vw;
 }
+main .main__section .upcoming_event {
+  width: 55vw;
+  margin-bottom: 1rem;
+}
+main .main__section .upcoming_event .img-slider .slide img {
+  width: 100%;
+}
+main .main__section .upcoming_event .img-slider .slide .info h3 {
+  color: green;
+  text-shadow: 0.1px 0.1px 1px black;
+  padding-bottom: 0.27rem;
+}
+main .main__section .upcoming_event .img-slider .slide .info p {
+  font-size: 0.87rem;
+}
 main .main__section .main__section-one {
   height: 100vh;
 }
@@ -168,7 +162,7 @@ main .main__section .main__section-one h2 {
   font-size: 1rem;
   color: rgba(10, 10, 10, 0.4);
   font-weight: 200;
-  padding-bottom: 1.125rem;
+  padding-bottom: 0.82rem;
 }
 main .main__section .main__section-one-books {
   overflow: scroll;
@@ -177,40 +171,47 @@ main .main__section .main__section-one-books {
   padding-bottom: 1.7rem;
   scroll-behavior: smooth;
 }
-main .main__section .main__section-one-books .left-paddle {
+main .main__section .main__section-one-books .paddles {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+main .main__section .main__section-one-books .paddles .left-paddle {
+  position: relative;
   background-color: transparent;
   border-radius: 8px;
   color: white;
   font-size: 1.5rem;
-  top: 28%;
+  top: 4rem;
   outline: unset;
-  left: 10%;
   height: 4rem;
   width: 3rem;
 }
-main .main__section .main__section-one-books .left-paddle.opacity {
+main .main__section .main__section-one-books .paddles .left-paddle.opacity {
   display: none;
 }
-main .main__section .main__section-one-books .right-paddle {
-  position: absolute;
+main .main__section .main__section-one-books .paddles .right-paddle {
+  position: relative;
   background-color: transparent;
   border-radius: 8px;
   color: white;
   outline: unset;
   font-size: 1.5rem;
-  top: 28%;
-  right: 10%;
+  top: 4rem;
+  left: 27rem;
   height: 4rem;
   width: 3rem;
 }
-main .main__section .main__section-one-books .right-paddle.opacity {
+main .main__section .main__section-one-books .paddles .right-paddle.opacity {
   display: none;
 }
 main .main__section .main__section-one-books-card {
-  cursor: pointer;
   font-size: 0.8rem;
   margin-right: 1.5rem;
+}
+main .main__section .main__section-one-books-card a {
+  cursor: pointer;
 }
 main .main__section .main__section-one-books-card p {
   color: rgba(10, 10, 10, 0.4);
