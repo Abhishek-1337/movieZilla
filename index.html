@@ -21,14 +21,36 @@
         <nav class="nav">
            <div class="nav__container">
                 <a href="index.html" class="nav__container-logo">
-                    <!-- <img src="dist/Images/logo.png" alt="BookZilla">
-                     -->
                      <span>movieZilla</span>
-                </a>
-                <!-- <div>
-                    <img src="./dist/Images/search.svg" alt="no img" id="searchImg">
-                   <input type="tel" name="search" id="search" placeholder="Genre">
-                </div> -->
+                </a> 
+                <div class="dropdown-main">
+                    <div class="dropdown">
+                        <button name="dropdown-btn" id="genre" class="dropbtn">Genre<i class="fa fa-caret-down"></i></button>
+                        <div id="myDropdown0" class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Comedy</a>
+                            <a href="#">Adventure</a>
+                          </div>
+                        
+                    </div>
+                    <div class="dropdown second">
+                        <button name="dropdown-btn" id="popular" class="dropbtn">Popularity<i class="fa fa-caret-down"></i></button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="#">Ascending</a>
+                            <a href="#">Descending</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                    </div>
+                    <div class="dropdown">
+                        <button name="dropdown-btn" id="year" class="dropbtn">Year<i class="fa fa-caret-down"></i></button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <a href="#">2022</a>
+                            <a href="#">2021</a>
+                            <a href="#">2020</a>
+                          </div>
+                    </div>
+                </div>
+                
            </div>
             <a href="#" class="header__menu">
                 <span class="header__menu-burger"></span>

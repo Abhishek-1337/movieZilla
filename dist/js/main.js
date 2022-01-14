@@ -23,9 +23,9 @@ rightPaddle.addEventListener('click',()=>{
      console.log(document.querySelector('.main__section-one-books').scrollLeft);
 });
 
-searchImg.addEventListener('click',()=>{
-    document.querySelector('#search').focus();
-})
+// searchImg.addEventListener('click',()=>{
+//     document.querySelector('#search').focus();
+// })
 
 mainSec.addEventListener('mouseover',()=>{
      leftPaddle.classList.remove('opacity');
@@ -35,3 +35,25 @@ mainSec.addEventListener('mouseout',()=>{
      leftPaddle.classList.add('opacity');
      rightPaddle.classList.add('opacity');
 })
+
+const btn=document.querySelectorAll('.dropbtn');
+
+
+[...btn].forEach((b,i)=>{
+     b.addEventListener('mouseover',()=>{
+          document.querySelector('#myDropdown'+i).classList.add('show');
+         
+     });
+});
+
+const contentDrop=document.querySelectorAll('.dropdown-content');
+[...contentDrop].forEach((b,i)=>{
+     b.addEventListener('mouseover',()=>{
+          document.querySelector('#myDropdown'+i).classList.add('show');
+         
+     });
+     b.addEventListener('mouseout',()=>{
+          document.querySelector('#myDropdown'+i).classList.remove('show');
+     })
+})
+
