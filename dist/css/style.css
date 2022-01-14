@@ -94,7 +94,7 @@ a:visited {
 .header .nav__container .dropdown-main .dropdown .dropdown-content {
   display: none;
   position: absolute;
-  top: 2rem;
+  top: 1.8rem;
   background-color: #f1f1f1;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -198,8 +198,14 @@ main .main__section .upcoming_event .img-slider .slide .info h3 {
   text-shadow: 0.1px 0.1px 1px black;
   padding-bottom: 0.27rem;
 }
+main .main__section .upcoming_event .img-slider .slide .info h5 {
+  font-size: 1.26rem;
+  color: rgba(10, 10, 10, 0.7);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
 main .main__section .upcoming_event .img-slider .slide .info p {
-  font-size: 0.87rem;
+  font-size: 0.97rem;
 }
 main .main__section .main__section-one {
   height: 100vh;
