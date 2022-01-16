@@ -88,7 +88,7 @@
                       <img src="./dist/Images/poster.jpg" alt="">
                       <div class="info">
                         <h3>Upcoming movie</h3>
-                        <h5>Storyline</h5>
+                        <h4>Storyline</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </div>
                     </div>
@@ -202,41 +202,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="main__section-two">
-                    <video src="dist/video/chrome.webm" type="video/webm" controls>
-                        <p>Your browser doesn't support windows</p>
-                    </video>
-                </div> -->
+                
+              
          </section>
     
     <script src="dist/js/main.js"></script>
-    <script>
-        var repeat = function(activeClass){
-        let active = document.getElementsByClassName('active');
-        let i = 1;
-
-        var repeater = () => {
-         setTimeout(function(){
-          [...active].forEach((activeSlide) => {
-            activeSlide.classList.remove('active');
-          });
-
-        slides[i].classList.add('active');
-        btns[i].classList.add('active');
-        i++;
-
-        if(slides.length == i){
-          i = 0;
-        }
-        if(i >= slides.length){
-          return;
-        }
-        repeater();
-      }, 10000);
-      }
-      repeater();
-    }
-    </script>
-    <!-- <script src="dist/js/api.js"></script> -->
 </body>
 </html>

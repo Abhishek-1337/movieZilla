@@ -99,9 +99,13 @@ a:visited {
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 0.7rem 0.4rem;
 }
 .header .nav__container .dropdown-main .dropdown .dropdown-content a {
   text-align: center;
+}
+.header .nav__container .dropdown-main .dropdown .dropdown-content a:not(:last-child) {
+  margin-bottom: 0.3rem;
 }
 .header .nav__container .dropdown-main .dropdown .dropdown-content.show {
   display: flex;
@@ -129,12 +133,53 @@ video {
   box-shadow: 1px 1px 4px black;
 }
 
+.explore {
+  padding: 4.5rem 3rem 2rem 3rem;
+  background-color: #f5f3f1;
+  height: 100%;
+}
+.explore .movie-detail {
+  display: flex;
+}
+.explore .movie-detail .post-img {
+  width: 48vw;
+  height: 55vh;
+}
+.explore .movie-detail .post-img img {
+  height: 100%;
+  width: 100%;
+}
+.explore .movie-detail .cast {
+  padding: 2rem;
+  z-index: 3;
+}
+.explore .movie-detail .cast h4 {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.explore .rating .stars .checked {
+  color: orange;
+}
+.explore .main_content {
+  margin-top: 2rem;
+}
+.explore .main_content h4 {
+  padding-left: 0.4rem;
+  border-left: 5px solid green;
+  margin-bottom: 0.7rem;
+}
+.explore .footer {
+  border-top: 3px solid black;
+  padding-top: 0.56rem;
+  margin-top: 4rem;
+}
+
 main {
   display: flex;
   flex-direction: row;
   background-color: #f5f3f1;
   height: 100%;
-  padding-top: 5rem;
+  padding-top: 4.5rem;
   padding-left: 10vw;
   padding-right: 10vw;
   font-family: "Roboto", sans-serif;
@@ -148,13 +193,13 @@ main .main__aside {
 }
 main .main__aside-heads {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: rgba(10, 10, 10, 0.5);
   text-transform: uppercase;
   padding-bottom: 0.8rem;
 }
 main .main__aside-uls {
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   font-weight: 400;
   padding-bottom: 1.5rem;
   margin-bottom: 1rem;
@@ -183,12 +228,11 @@ main .main__aside #button {
   font-size: 0.7rem;
 }
 main .main__section {
-  padding-top: 0.1875rem;
   width: 80vw;
 }
 main .main__section .upcoming_event {
   width: 55vw;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 main .main__section .upcoming_event .img-slider .slide img {
   width: 100%;
@@ -198,14 +242,16 @@ main .main__section .upcoming_event .img-slider .slide .info h3 {
   text-shadow: 0.1px 0.1px 1px black;
   padding-bottom: 0.27rem;
 }
-main .main__section .upcoming_event .img-slider .slide .info h5 {
-  font-size: 1.26rem;
+main .main__section .upcoming_event .img-slider .slide .info h4 {
+  font-size: 1.18rem;
   color: rgba(10, 10, 10, 0.7);
   font-weight: 500;
   margin-bottom: 0.4rem;
 }
 main .main__section .upcoming_event .img-slider .slide .info p {
   font-size: 0.97rem;
+  padding-left: 1rem;
+  border-left: 2px solid green;
 }
 main .main__section .main__section-one {
   height: 100vh;
@@ -259,7 +305,7 @@ main .main__section .main__section-one-books .paddles .right-paddle.opacity {
   display: none;
 }
 main .main__section .main__section-one-books-card {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-right: 1.5rem;
 }
 main .main__section .main__section-one-books-card a {
