@@ -1,0 +1,47 @@
+.explore{
+    padding:4.5rem 3rem 2rem 3rem;
+    background-color:  rgb(245, 243, 241);
+    height:100%;
+    .movie-detail{
+        display: flex;
+        .post-img{
+            width: 48vw;
+            height: 55vh;
+            img{
+                height:100%;
+                width:100%;
+            }
+        }
+       .cast{
+         padding: 2rem;
+         z-index:3;
+           h4{
+               display: inline-block;
+               margin-right:1rem;
+           }
+        }
+    }
+
+    .rating{
+        .stars{
+            .checked{
+                color:orange;
+            }
+        }
+    }
+
+    .main_content{
+        margin-top:2rem;
+        h4{
+            padding-left:0.4rem;
+            border-left:5px solid green;
+            margin-bottom:0.7rem;
+        }
+    }
+
+    .footer{
+        border-top:3px solid black;
+        padding-top:0.56rem;
+        margin-top:4rem;
+    }
+}

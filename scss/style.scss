@@ -1,18 +1,16 @@
-@import 'globals', 'variables','header','video';
+@import 'globals', 'variables','header','video','explore';
 
 main{
     display: flex;
     flex-direction: row;
     background-color: rgb(245, 243, 241);
     height: 100%;
-    // padding:1.9375rem 0 0.75rem 0.75rem; 
-    padding-top:5rem;
+    padding-top:4.5rem;
     padding-left: 10vw;
     padding-right: 10vw;
     font-family: 'Roboto', sans-serif;
 
     .main__aside{
-        // position:fixed;
         display:block;
         width:8rem;
         padding-left: 1.2rem;
@@ -20,22 +18,17 @@ main{
         position: fixed;
         &-heads{
             display:block;
-            font-size:0.8rem;
+            font-size:0.9rem;
             color:rgba(10,10,10,0.5);
             text-transform: uppercase;
-            padding-bottom:0.8rem;
-            
+            padding-bottom:0.8rem;    
         }
-
         &-uls{
-            font-size:0.84rem;
+            font-size:0.88rem;
             font-weight:400;
             padding-bottom: 1.5rem;
             margin-bottom:1rem;
             border-bottom:2px solid rgba(10,10,10,0.189);
-
-          
-            
 
             &-items{
 
@@ -46,7 +39,6 @@ main{
                 &:not(:last-child){
                     padding-bottom:0.5rem;
                 }
-
                 a{
                     color:black;
                 }
@@ -69,20 +61,48 @@ main{
     }
 
     .main__section{
-        padding-top: 0.1875rem;
+        // padding-top: 0.1875rem;
         width:80vw;
 
-        
-       
+        .upcoming_event{
+            width:55vw;
+            margin-bottom:2rem;
+
+            .img-slider{
+                .slide{
+                    img{
+                        width:100%;
+                    }
+
+                    .info{
+                        h3{
+                            color:green;
+                            text-shadow:0.1px 0.1px 1px black;
+                            padding-bottom:0.27rem;
+                        }
+                        h4{
+                            font-size: 1.18rem;
+                            color:rgba(10,10,10,0.7);
+                            font-weight: 500;
+                            margin-bottom: 0.4rem;
+                        }
+                        p{
+                            font-size:0.97rem;
+                            padding-left: 1rem;
+                            border-left: 2px solid green;
+                        }
+                    }
+                }
+            }
+        }
         .main__section-one{
                 height:100vh;
             
             h2{
-                // position: fixed;
                 font-size: 1rem;
                 color:rgba(10,10,10,0.4);
                 font-weight: 200;
-                padding-bottom:1.125rem;
+                padding-bottom:0.82rem;
             }
             &-books{
                 overflow:scroll;
@@ -90,45 +110,52 @@ main{
                 flex-direction: row;
                 padding-bottom:1.7rem;
                 scroll-behavior: smooth;
-                // transition: overflow 2s ease;
 
-                .left-paddle{
-                    position:absolute;
-                    background-color: transparent;
-                    border-radius: 8px;
-                    color:white;
-                    font-size:1.5rem;
-                    top:28%;
-                    outline: unset;
-                    left:10%;
-                    height:4rem;
-                    width:3rem;
-                    
-                    &.opacity{
-                        display:none;
+                .paddles{
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    .left-paddle{
+                        position:relative;
+                        background-color: transparent;
+                        border-radius: 8px;
+                        color:white;
+                        font-size:1.5rem;
+                        top:4rem;
+                        outline: unset;
+                        height:4rem;
+                        width:3rem;
+                        
+                        &.opacity{
+                            display:none;
+                        }
                     }
-                }
-               
+                
                 .right-paddle{
-                    position:absolute;
-                    background-color: transparent;
-                    border-radius: 8px;
-                    color:white;
-                    outline: unset;
-                    font-size:1.5rem;
-                    top:28%;
-                    right:10%;
-                    height:4rem;
-                    width:3rem;
-                    
-
-                    &.opacity{
-                        display:none;
+                        position:relative;
+                        background-color: transparent;
+                        border-radius: 8px;
+                        color:rgb(255, 255, 255);
+                        outline: unset;
+                        font-size:1.5rem;
+                        top:4rem;
+                        left:27rem;
+                        height:4rem;
+                        width:3rem;
+                        
+    
+                        &.opacity{
+                            display:none;
+                        }
                     }
-                }
-                &-card{
-                    font-size:0.8rem;
+                } 
+                &-card{     
+                    font-size:0.9rem;
                     margin-right: 1.5rem;
+                    a{
+                        cursor:pointer;
+                    }
                     p{
                         color:rgba(10,10,10,0.4);
                     }
@@ -154,9 +181,7 @@ main{
             }
         }
     }
-
     .main__aside-two{
-        // position:fixed;
         padding-left:1rem;
         right: 0;
         position: fixed;

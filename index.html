@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookZilla</title>
+    <title>MovieZilla</title>
     <link rel="stylesheet" href="dist/css/style.css" class="src">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
            <div class="nav__container">
-                <a href="#" class="nav__container-logo">
-                    <!-- <img src="dist/Images/logo.png" alt="BookZilla">
-                     -->
+                <a href="index.html" class="nav__container-logo">
                      <span>movieZilla</span>
-                </a>
-                <div>
-                    <img src="./dist/Images/search.svg" alt="no img" id="searchImg">
-                   <input type="tel" name="search" id="search" placeholder="Genre">
+                </a> 
+                <div class="dropdown-main">
+                    <div class="dropdown">
+                        <button name="dropdown-btn" id="genre" class="dropbtn">Genre<i class="fa fa-caret-down"></i></button>
+                        <div id="myDropdown0" class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Comedy</a>
+                            <a href="#">Adventure</a>
+                          </div>
+                        
+                    </div>
+                    <div class="dropdown second">
+                        <button name="dropdown-btn" id="popular" class="dropbtn">Popularity<i class="fa fa-caret-down"></i></button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="#">Ascending</a>
+                            <a href="#">Descending</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                    </div>
+                    <div class="dropdown">
+                        <button name="dropdown-btn" id="year" class="dropbtn">Year<i class="fa fa-caret-down"></i></button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <a href="#">2022</a>
+                            <a href="#">2021</a>
+                            <a href="#">2020</a>
+                          </div>
+                    </div>
                 </div>
+                
            </div>
             <a href="#" class="header__menu">
                 <span class="header__menu-burger"></span>
@@ -57,6 +81,19 @@
             <span id="button">Create a shelf</span>
         </aside>
         <section class="main__section">
+
+            <div class="upcoming_event">
+                <div class="img-slider">
+                    <div class="slide active">
+                      <img src="./dist/Images/poster.jpg" alt="">
+                      <div class="info">
+                        <h3>Upcoming movie</h3>
+                        <h4>Storyline</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                 </div>
+            </div>
             
             <div class="main__section-one">
                 
@@ -69,7 +106,7 @@
                    
                     <div class="main__section-one-books-card">
                         <img src="dist/Images/jobs.jpg" alt="" >
-                        <h4><b>Steve Jobs</b></h4>
+                        <h4><b><a href="explore_detail.html">Steve Jobs</a></b></h4>
                         <p>Walter Isaacson</p>
                         <div class="stars">
                             <span class="fa fa-star checked"></span>
@@ -79,6 +116,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
+              
                     <div class="main__section-one-books-card">
                         <img src="dist/Images/radical.jpg" alt="" >
                         <h4><b>Steve Jobs</b></h4>
@@ -164,16 +202,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="main__section-two">
-                    <video src="dist/video/chrome.webm" type="video/webm" controls>
-                        <p>Your browser doesn't support windows</p>
-                    </video>
-                </div>
-                     <div class="footer">
+               
+                <div class="footer">
                     <p>copyright &copy; movieZilla</p>
-                     by Abhishek</a
-                    >
-                  </div>
+                     by Abhishek
+                 </div>
+
          </section>
     
     <script src="dist/js/main.js"></script>
