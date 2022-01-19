@@ -1,4 +1,4 @@
-@import 'globals', 'variables','header','video','explore';
+@import 'globals', 'variables','header','explore';
 
 main{
     display: flex;
@@ -70,21 +70,21 @@ main{
 
             .img-slider{
                 .slide{
-                    img{
-                        width:100%;
-                    }
-
+                    .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+                        height: 27rem;
+                    }                      
                     .info{
+                        margin-top:1rem;
                         h3{
                             color:green;
                             text-shadow:0.1px 0.1px 1px black;
-                            padding-bottom:0.27rem;
+                            padding-bottom:0.47rem;
                         }
                         h4{
                             font-size: 1.18rem;
                             color:rgba(10,10,10,0.7);
                             font-weight: 500;
-                            margin-bottom: 0.4rem;
+                            margin-bottom: 0.8rem;
                         }
                         p{
                             font-size:0.97rem;

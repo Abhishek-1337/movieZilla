@@ -15,8 +15,7 @@ let api_key='f67fd29370msh40c96b525cf9a1ap1a8dbdjsn36c31690b32c';
             }
     };
     axios.request(options)
-    .then((res)=>{
-        
+    .then((res)=>{     
         for(let i=0; i< 10; i++){
             let regex=/tt\d+/;
             let matchReg=res.data[i].match(regex);
@@ -71,3 +70,5 @@ let api_key='f67fd29370msh40c96b525cf9a1ap1a8dbdjsn36c31690b32c';
        },1000);
 
   }
+
+  export {api_host,api_key};

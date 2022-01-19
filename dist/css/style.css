@@ -40,6 +40,7 @@ a:visited {
   position: fixed;
   top: 0;
   padding: 0.75rem;
+  z-index: 2;
 }
 .header .nav {
   display: flex;
@@ -107,6 +108,9 @@ a:visited {
 .header .nav__container .dropdown-main .dropdown .dropdown-content a:not(:last-child) {
   margin-bottom: 0.3rem;
 }
+.header .nav__container .dropdown-main .dropdown .dropdown-content a:hover {
+  background-color: #ccc6c6;
+}
 .header .nav__container .dropdown-main .dropdown .dropdown-content.show {
   display: flex;
   flex-direction: column;
@@ -124,13 +128,6 @@ a:visited {
 }
 .header__menu-burger:not(:last-child) {
   margin-bottom: 3px;
-}
-
-video {
-  margin-top: 2rem;
-  width: 70%;
-  height: 40%;
-  box-shadow: 1px 1px 4px black;
 }
 
 .explore {
@@ -151,7 +148,6 @@ video {
 }
 .explore .movie-detail .cast {
   padding: 2rem;
-  z-index: 3;
 }
 .explore .movie-detail .cast h4 {
   display: inline-block;
@@ -234,19 +230,22 @@ main .main__section .upcoming_event {
   width: 55vw;
   margin-bottom: 2rem;
 }
-main .main__section .upcoming_event .img-slider .slide img {
-  width: 100%;
+main .main__section .upcoming_event .img-slider .slide .video-js.vjs-fluid, main .main__section .upcoming_event .img-slider .slide .video-js.vjs-16-9, main .main__section .upcoming_event .img-slider .slide .video-js.vjs-4-3 {
+  height: 27rem;
+}
+main .main__section .upcoming_event .img-slider .slide .info {
+  margin-top: 1rem;
 }
 main .main__section .upcoming_event .img-slider .slide .info h3 {
   color: green;
   text-shadow: 0.1px 0.1px 1px black;
-  padding-bottom: 0.27rem;
+  padding-bottom: 0.47rem;
 }
 main .main__section .upcoming_event .img-slider .slide .info h4 {
   font-size: 1.18rem;
   color: rgba(10, 10, 10, 0.7);
   font-weight: 500;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 main .main__section .upcoming_event .img-slider .slide .info p {
   font-size: 0.97rem;
