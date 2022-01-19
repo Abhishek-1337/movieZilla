@@ -332,3 +332,18 @@ main .main__aside-two {
   right: 0;
   position: fixed;
 }/*# sourceMappingURL=style.css.map */
+.footer {
+  height: 40px;
+  background-color:rgb(31, 44, 31);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  bottom: 0;
+  margin-top: 160px;
+}
+.footer a{
+  color:white;
+}
