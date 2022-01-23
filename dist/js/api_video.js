@@ -1,5 +1,5 @@
 // import { api_host,api_key } from "./api";
-const videoTag=document.querySelector('video');
+const videoTag=document.querySelector('#my-video');
 
 
 const options = {
@@ -11,8 +11,13 @@ const options = {
       'x-rapidapi-key': 'f67fd29370msh40c96b525cf9a1ap1a8dbdjsn36c31690b32c'
     }
 };
-const videoPlayback=()=>{
-    axios.request({...options, url: 'https://imdb8.p.rapidapi.com/title/get-video-playback',  params: {viconst: 'vi589675545', region: 'US'}})
+const videoPlayback=(videoId)=>{
+    console.log(videoId);
+    axios.request({
+        ...options, 
+        url: 'https://imdb8.p.rapidapi.com/title/get-video-playback',  
+        params: {viconst: videoId, region: 'US'}
+    })
     .then((reply)=>{
         videoTag.src=reply.data.resource.encodings[3].playUrl;
     })
@@ -25,14 +30,14 @@ const getVideo=(ttid)=>{
     .then((res)=>{
         let reg=/vi\d+/;
         let videoId=res.data.resource.videos[0].id.match(reg);
-        videoPlayback();
+        videoPlayback(videoId[0]);
     })
     .catch((err)=>{
         console.log(err);
     })
 }
 
-axios.request(options).then(function (response) {
+axios.request(options).then((response)=>{
     let regex=/tt\d+/;
     let matchReg=response.data[0].id.match(regex);
     getVideo(...matchReg); 

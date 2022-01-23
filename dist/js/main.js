@@ -5,7 +5,6 @@ const leftPaddle = document.querySelector('.left-paddle');
 const rightPaddle = document.querySelector('.right-paddle');
 const mainSec = document.querySelector('.main__section-one-books');
 
-
 leftPaddle.addEventListener('click',()=>{
      document.querySelector('.main__section-one-books').scrollLeft -= 300;
 
@@ -38,5 +37,6 @@ const btn=document.querySelectorAll('.dropdown');
           document.querySelector('#myDropdown'+i).classList.remove('show'); 
      });
 });
+
 
 

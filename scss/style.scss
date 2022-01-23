@@ -1,4 +1,4 @@
-@import 'globals', 'variables','header','explore';
+@import 'globals', 'variables','header','explore','footer';
 
 main{
     display: flex;
@@ -72,7 +72,20 @@ main{
                 .slide{
                     .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
                         height: 27rem;
-                    }                      
+                    }  
+                    
+                    #my-video{
+
+
+                        .vjs-error-display{
+                            display:none;
+                        }
+
+                        .vjs-poster{
+                            width:3rem;
+                            height:3rem;
+                        }
+                    }
                     .info{
                         margin-top:1rem;
                         h3{
@@ -181,6 +194,7 @@ main{
             }
         }
     }
+
     .main__aside-two{
         padding-left:1rem;
         right: 0;

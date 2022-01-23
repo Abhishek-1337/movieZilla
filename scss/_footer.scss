@@ -1,0 +1,28 @@
+.footer {
+    height:20vh;
+    text-align:center;
+    border-top: 3px solid black;
+    background-color: #0e2332;
+    color:white;
+    font-size: 0.8rem;
+    padding: 0 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .social-icons{
+        width:15vw;
+        display: flex;
+        justify-content: space-evenly;
+        i{
+            color:white;
+            
+        }
+    }
+
+    .footer-copyright{
+        // position: relative;
+        // top: 40%;
+        // right: -42%;
+    }
+}

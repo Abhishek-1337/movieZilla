@@ -170,6 +170,26 @@ a:visited {
   margin-top: 4rem;
 }
 
+.footer {
+  height: 20vh;
+  text-align: center;
+  border-top: 3px solid black;
+  background-color: #0e2332;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0 2rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .social-icons {
+  width: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .social-icons i {
+  color: white;
+}
 main {
   display: flex;
   flex-direction: row;
@@ -232,6 +252,13 @@ main .main__section .upcoming_event {
 }
 main .main__section .upcoming_event .img-slider .slide .video-js.vjs-fluid, main .main__section .upcoming_event .img-slider .slide .video-js.vjs-16-9, main .main__section .upcoming_event .img-slider .slide .video-js.vjs-4-3 {
   height: 27rem;
+}
+main .main__section .upcoming_event .img-slider .slide #my-video .vjs-error-display {
+  display: none;
+}
+main .main__section .upcoming_event .img-slider .slide #my-video .vjs-poster {
+  width: 3rem;
+  height: 3rem;
 }
 main .main__section .upcoming_event .img-slider .slide .info {
   margin-top: 1rem;
@@ -332,18 +359,3 @@ main .main__aside-two {
   right: 0;
   position: fixed;
 }/*# sourceMappingURL=style.css.map */
-.footer {
-  height: 40px;
-  background-color:rgb(31, 44, 31);
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  justify-content: center;
-  color: white;
-  flex-direction: column;
-  bottom: 0;
-  margin-top: 160px;
-}
-.footer a{
-  color:white;
-}

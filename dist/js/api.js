@@ -44,6 +44,13 @@ let api_key='f67fd29370msh40c96b525cf9a1ap1a8dbdjsn36c31690b32c';
                     console.log(response.data[char].title.title);
                     let divT=document.createElement('div');
                     divT.classList.add('.main__section-one-books-card');
+                    let divStar=document.createElement('div');
+                    divStar.classList.add('.stars');
+                    for(let i=0; i<5; i++){
+                        let spanItems=document.createElement('span');
+                        spanItems.classList.add('fa','fa-star');
+                        divStar.appendChild('spanItems');
+                    }
                     divT.style.marginRight="1.5rem";
                     divT.style.fontSize="0.8rem";
                     let image=document.createElement('img');
@@ -71,4 +78,3 @@ let api_key='f67fd29370msh40c96b525cf9a1ap1a8dbdjsn36c31690b32c';
 
   }
 
-  export {api_host,api_key};

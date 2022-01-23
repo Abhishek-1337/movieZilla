@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" /> -->
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
     <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet"/>
 </head>
 <body>
@@ -93,13 +93,14 @@
                         id="my-video"
                         class="video-js vjs-big-play-centered"
                         controls
-                        preload="auto"
+                        preload="none"
                         width="640"
                         height="350"
-                        poster="./dist/Images/coral.jpg"
-                        data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'
+                        poster=""
+                        data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2]
+                      }'          
                       >
-                        <source src="./dist/video/navcss.mp4" type="video/mp4" />
+                        <source src="hello.mp4" type="video/mp4" />
                         <p class="vjs-no-js">
                         To view this video please enable JavaScript, and consider upgrading to a
                         web browser that
@@ -222,16 +223,37 @@
                         </div>
                     </div>
                 </div>
-               
-                <div class="footer">
-                    <p>copyright &copy; movieZilla</p>
-                     by Abhishek
-                 </div>
-
          </section>
-    
-    <script src="dist/js/main.js"></script>
-    <script  src="dist/js/api_video.js"></script>
+     </main>
+     <div class="footer">
+        
+            
+            <div class="social-icons">
+                <a href="https://twitter.com/duggal_shahab" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+
+                <a href="https://github.com/Abhishek-1337" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+
+                <a href="#!">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer-copyright">
+            <p>copyright &copy; movieZilla</p>
+            </div>
+
+    </div>
+    <!-- <script  src="dist/js/api_video.js"></script> -->
+    <script src="https://kit.fontawesome.com/4f71b06535.js" crossorigin="anonymous"></script>
+    <script src="dist/js/api.js"></script>
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script src="dist/js/main.js"></script>
 </body>
 </html>
