@@ -86,7 +86,7 @@ main{
                             height:3rem;
                         }
                     }
-                    .info{
+                    #info{
                         margin-top:1rem;
                         h3{
                             color:green;
@@ -103,6 +103,10 @@ main{
                             font-size:0.97rem;
                             padding-left: 1rem;
                             border-left: 2px solid green;
+
+                            &.hide{
+                                display:none;
+                            }
                         }
                     }
                 }

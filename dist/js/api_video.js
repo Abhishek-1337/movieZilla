@@ -1,6 +1,6 @@
 // import { api_host,api_key } from "./api";
 const videoTag=document.querySelector('#my-video');
-
+const descVideo = document.querySelector('#info p');
 
 const options = {
     method: 'GET',
@@ -30,6 +30,8 @@ const getVideo=(ttid)=>{
     .then((res)=>{
         let reg=/vi\d+/;
         let videoId=res.data.resource.videos[0].id.match(reg);
+        descVideo.classList.remove('hide');
+        descVideo.innerText = res.data.resource.videos[0]["description"];
         videoPlayback(videoId[0]);
     })
     .catch((err)=>{
@@ -39,7 +41,7 @@ const getVideo=(ttid)=>{
 
 axios.request(options).then((response)=>{
     let regex=/tt\d+/;
-    let matchReg=response.data[0].id.match(regex);
+    let matchReg=response.data[2].id.match(regex);
     getVideo(...matchReg); 
 }).catch(function (error) {
 	console.error(error);

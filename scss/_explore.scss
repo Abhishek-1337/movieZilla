@@ -2,8 +2,42 @@
     padding:4.5rem 3rem 2rem 3rem;
     background-color:  rgb(245, 243, 241);
     height:100%;
+
+    #movie-name{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        span{
+            font-size:2rem;
+            font-weight: 400;
+        }
+
+        .rating{
+            .stars{
+                span{
+                    font-size: 1rem;
+                }
+                .checked{
+                    color:orange;
+                }
+            }
+        }
+    }
     .movie-detail{
         display: flex;
+
+        #genre-detail{
+            height: 2.2rem;
+            width: 4rem;
+            border: 2px solid black;
+            border-radius: 12px;
+            div{
+                height: 100%;
+                text-align: center;
+                padding-top: 0.17rem;
+            }
+        }
+
         .post-img{
             width: 48vw;
             height: 55vh;
@@ -21,13 +55,6 @@
         }
     }
 
-    .rating{
-        .stars{
-            .checked{
-                color:orange;
-            }
-        }
-    }
 
     .main_content{
         margin-top:2rem;
