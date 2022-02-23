@@ -1,5 +1,5 @@
 .explore{
-    padding:4.5rem 3rem 2rem 3rem;
+    padding:4.5rem 7rem 2rem 7rem;
     background-color:  rgb(245, 243, 241);
     height:100%;
 
@@ -7,7 +7,11 @@
         display:flex;
         justify-content: space-between;
         margin-bottom: 0.5rem;
+        padding:0.55rem;
+        background-color: dimgray;
+        color:white;
         span{
+            
             font-size:2rem;
             font-weight: 400;
         }
@@ -26,31 +30,75 @@
     .movie-detail{
         display: flex;
 
-        #genre-detail{
-            height: 2.2rem;
-            width: 4rem;
-            border: 2px solid black;
-            border-radius: 12px;
-            div{
-                height: 100%;
-                text-align: center;
-                padding-top: 0.17rem;
-            }
-        }
-
         .post-img{
-            width: 48vw;
-            height: 55vh;
+            position: relative;
+            overflow: hidden;
+            width: 57%;
+            height: 0;
+            padding-bottom: 35.25%; 
+
             img{
-                height:100%;
-                width:100%;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
             }
         }
        .cast{
          padding: 2rem;
+
+         #genre-detail{
+            display:flex;
+            flex-direction: row;
+            height: 2.2rem;            
+            margin-bottom: 0.8rem;
+             li{
+                height: 100%;
+                text-align: center;
+                padding-top: 0.17rem;
+                border: 2px solid rgb(52, 173, 52);
+                border-radius: 17px;
+                padding: 0.65rem;
+                line-height: 50%;
+                &:not(:last-child){
+                    margin-right:1.4rem;
+                }
+            }
+        }
+
+        .starring{
+            display:flex;
+            flex-direction: row;
+            height: 2.6rem;            
+            margin-bottom: 0.4rem;
+            border-bottom: 2px solid rgb(141, 223, 152);
+            border-top: 2px solid rgb(141, 223, 152);
+            padding:0.3rem;
+            
+            li{
+                height: 100%;
+                text-align: center;
+                padding: 0.65rem;
+                line-height: 50%;
+                margin-left: 2rem;
+
+                &::before{
+                    position: relative;
+                    right:1.4rem;
+                    content:"\2022";
+                    color:black;
+                }
+                
+            }
+        }
            h4{
                display: inline-block;
-               margin-right:1rem;
+               height: 100%;
+                text-align: center;
+                padding-top: 0.17rem;
+                padding: 0.65rem;
+                line-height: 50%;
            }
         }
     }

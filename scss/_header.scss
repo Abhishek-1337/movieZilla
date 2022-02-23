@@ -39,7 +39,7 @@
                     width:5rem;
                     align-items: center;
                     justify-content: space-evenly;
-                    font-size:0.9rem;
+                    font-size:1rem;
                     button{
                         font-size:inherit;
                         width: 70%;
@@ -59,6 +59,7 @@
                     }
 
                     .dropdown-content{
+                        font-size: inherit;
                         display: none;
                         position: absolute;
                         top:1.8rem;

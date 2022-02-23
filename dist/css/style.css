@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -73,7 +74,7 @@ a:visited {
   width: 5rem;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .header .nav__container .dropdown-main .dropdown button {
   font-size: inherit;
@@ -93,6 +94,7 @@ a:visited {
   background-color: white;
 }
 .header .nav__container .dropdown-main .dropdown .dropdown-content {
+  font-size: inherit;
   display: none;
   position: absolute;
   top: 1.8rem;
@@ -131,7 +133,7 @@ a:visited {
 }
 
 .explore {
-  padding: 4.5rem 3rem 2rem 3rem;
+  padding: 4.5rem 7rem 2rem 7rem;
   background-color: #f5f3f1;
   height: 100%;
 }
@@ -139,6 +141,9 @@ a:visited {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  padding: 0.55rem;
+  background-color: dimgray;
+  color: white;
 }
 .explore #movie-name span {
   font-size: 2rem;
@@ -153,31 +158,70 @@ a:visited {
 .explore .movie-detail {
   display: flex;
 }
-.explore .movie-detail #genre-detail {
-  height: 2.2rem;
-  width: 4rem;
-  border: 2px solid black;
-  border-radius: 12px;
-}
-.explore .movie-detail #genre-detail div {
-  height: 100%;
-  text-align: center;
-  padding-top: 0.17rem;
-}
 .explore .movie-detail .post-img {
-  width: 48vw;
-  height: 55vh;
+  position: relative;
+  overflow: hidden;
+  width: 57%;
+  height: 0;
+  padding-bottom: 35.25%;
 }
 .explore .movie-detail .post-img img {
-  height: 100%;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .explore .movie-detail .cast {
   padding: 2rem;
 }
+.explore .movie-detail .cast #genre-detail {
+  display: flex;
+  flex-direction: row;
+  height: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+.explore .movie-detail .cast #genre-detail li {
+  height: 100%;
+  text-align: center;
+  padding-top: 0.17rem;
+  border: 2px solid #34ad34;
+  border-radius: 17px;
+  padding: 0.65rem;
+  line-height: 50%;
+}
+.explore .movie-detail .cast #genre-detail li:not(:last-child) {
+  margin-right: 1.4rem;
+}
+.explore .movie-detail .cast .starring {
+  display: flex;
+  flex-direction: row;
+  height: 2.6rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 2px solid #8ddf98;
+  border-top: 2px solid #8ddf98;
+  padding: 0.3rem;
+}
+.explore .movie-detail .cast .starring li {
+  height: 100%;
+  text-align: center;
+  padding: 0.65rem;
+  line-height: 50%;
+  margin-left: 2rem;
+}
+.explore .movie-detail .cast .starring li::before {
+  position: relative;
+  right: 1.4rem;
+  content: "•";
+  color: black;
+}
 .explore .movie-detail .cast h4 {
   display: inline-block;
-  margin-right: 1rem;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.17rem;
+  padding: 0.65rem;
+  line-height: 50%;
 }
 .explore .main_content {
   margin-top: 2rem;
@@ -239,7 +283,7 @@ main .main__aside-heads {
   padding-bottom: 0.8rem;
 }
 main .main__aside-uls {
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 400;
   padding-bottom: 1.5rem;
   margin-bottom: 1rem;
@@ -270,12 +314,43 @@ main .main__aside #button {
 main .main__section {
   width: 80vw;
 }
+main .main__section #movie-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.55rem;
+  background-color: dimgray;
+  color: white;
+}
+main .main__section #movie-name span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .main__section #movie-name .rating h5 span {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  color: #a39696;
+}
+main .main__section #movie-name .rating .stars span {
+  font-size: 1rem;
+}
+main .main__section #movie-name .rating .stars .checked {
+  color: orange;
+}
 main .main__section .upcoming_event {
-  width: 55vw;
+  width: 80vw;
   margin-bottom: 2rem;
+}
+main .main__section .upcoming_event .img-slider {
+  display: flex;
+  flex-direction: row;
+}
+main .main__section .upcoming_event .img-slider .slide {
+  width: 100%;
 }
 main .main__section .upcoming_event .img-slider .slide .video-js.vjs-fluid, main .main__section .upcoming_event .img-slider .slide .video-js.vjs-16-9, main .main__section .upcoming_event .img-slider .slide .video-js.vjs-4-3 {
   height: 27rem;
+  width: 100%;
 }
 main .main__section .upcoming_event .img-slider .slide #my-video .vjs-error-display {
   display: none;
@@ -299,18 +374,96 @@ main .main__section .upcoming_event .img-slider .slide #info h4 {
   margin-bottom: 0.8rem;
 }
 main .main__section .upcoming_event .img-slider .slide #info p {
-  font-size: 0.97rem;
+  font-size: 1.1rem;
   padding-left: 1rem;
   border-left: 2px solid green;
 }
 main .main__section .upcoming_event .img-slider .slide #info p.hide {
   display: none;
 }
+main .main__section .upcoming_event .img-slider .cast {
+  padding: 2rem;
+}
+main .main__section .upcoming_event .img-slider .cast #genre-detail {
+  display: flex;
+  flex-direction: row;
+  height: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+main .main__section .upcoming_event .img-slider .cast #genre-detail li {
+  height: 100%;
+  text-align: center;
+  padding-top: 0.17rem;
+  border: 2px solid #34ad34;
+  border-radius: 17px;
+  padding: 0.65rem;
+  line-height: 50%;
+}
+main .main__section .upcoming_event .img-slider .cast #genre-detail li:not(:last-child) {
+  margin-right: 1.4rem;
+}
+main .main__section .upcoming_event .img-slider .cast #genre-detail.toggleDisplay {
+  display: none;
+}
+main .main__section .upcoming_event .img-slider .cast #title {
+  display: flex;
+  flex-direction: row;
+  height: 2.6rem;
+  border-bottom: 2px solid #8ddf98;
+  border-top: 2px solid #8ddf98;
+  padding: 0.3rem;
+}
+main .main__section .upcoming_event .img-slider .cast #title li {
+  height: 100%;
+  text-align: center;
+  padding: 0.65rem;
+  line-height: 50%;
+  margin-left: 2rem;
+}
+main .main__section .upcoming_event .img-slider .cast #title li::before {
+  position: relative;
+  right: 1.4rem;
+  content: "•";
+  color: black;
+}
+main .main__section .upcoming_event .img-slider .cast .stars {
+  position: relative;
+  left: 1rem;
+}
+main .main__section .upcoming_event .img-slider .cast .starring {
+  display: flex;
+  flex-direction: row;
+  height: 2.6rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 2px solid #8ddf98;
+  padding: 0.3rem;
+}
+main .main__section .upcoming_event .img-slider .cast .starring li {
+  height: 100%;
+  text-align: center;
+  padding: 0.65rem;
+  line-height: 50%;
+  margin-left: 2rem;
+}
+main .main__section .upcoming_event .img-slider .cast .starring li::before {
+  position: relative;
+  right: 1.4rem;
+  content: "•";
+  color: black;
+}
+main .main__section .upcoming_event .img-slider .cast h4 {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.17rem;
+  padding: 0.65rem;
+  line-height: 50%;
+}
 main .main__section .main__section-one {
   height: 100vh;
 }
 main .main__section .main__section-one h2 {
-  font-size: 1rem;
+  font-size: 1.26rem;
   color: rgba(10, 10, 10, 0.4);
   font-weight: 200;
   padding-bottom: 0.82rem;

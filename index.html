@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
     <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet"/>
+    
 </head>
 <body>
     
@@ -84,7 +85,19 @@
             <span id="button">Create a shelf</span>
         </aside>
         <section class="main__section">
-
+            <div id="movie-name">
+                <span id="case-title"></span>
+                <div class="rating">
+                  <h5>MZ rating<span id="rating-case"></span></h5>
+                    <div class="stars">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
             <div class="upcoming_event">
                 <div class="img-slider">
                     <div class="slide active">
@@ -113,6 +126,30 @@
                         <p class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </div>
                     </div>
+                    <div class="cast">
+                        <ul id="genre-detail" class=" toggleDisplay">
+                        </ul>
+
+                        <div id="title">
+                            <h4>Title</h4>
+                            <li><span></span></li>
+                        </div>
+                        
+                        <div class="starring">
+                           <h4>Stars</h4>
+                           <li><span>Abhishek</span></li>
+                           <li><span>Sanjana</span></li>
+                        </div>
+
+                        <!-- <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <div>6.2</div>
+                        </div> -->
+                      </div>
                  </div>
             </div>
             
@@ -250,9 +287,9 @@
             </div>
 
     </div>
-    <!-- <script  src="dist/js/api_video.js"></script> -->
+    <script  src="dist/js/api_video.js"></script>
     <script src="https://kit.fontawesome.com/4f71b06535.js" crossorigin="anonymous"></script>
-    <!-- <script src="dist/js/api.js"></script> -->
+    <!-- <script type="module" src="dist/js/api.js"></script> -->
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
     <script src="dist/js/main.js"></script>
 </body>

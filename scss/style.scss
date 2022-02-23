@@ -24,7 +24,7 @@ main{
             padding-bottom:0.8rem;    
         }
         &-uls{
-            font-size:0.88rem;
+            font-size:1rem;
             font-weight:400;
             padding-bottom: 1.5rem;
             margin-bottom:1rem;
@@ -63,20 +63,52 @@ main{
     .main__section{
         // padding-top: 0.1875rem;
         width:80vw;
-
+        #movie-name{
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding:0.55rem;
+            background-color: dimgray;
+            color:white;
+            span{
+                
+                font-size:2rem;
+                font-weight: 400;
+            }
+    
+            .rating{
+                h5{
+                    span{
+                        font-size:1rem;
+                        padding-left: 0.5rem;
+                        color:rgb(163, 150, 150);
+                    }
+                }
+                .stars{
+                    span{
+                        font-size: 1rem;
+                    }
+                    .checked{
+                        color:orange;
+                    }
+                }
+            }
+        }
         .upcoming_event{
-            width:55vw;
+            width:80vw;
             margin-bottom:2rem;
 
             .img-slider{
+                display:flex;
+                flex-direction: row;
                 .slide{
+                    width:100%;
                     .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
                         height: 27rem;
+                        width: 100%;
                     }  
                     
                     #my-video{
-
-
                         .vjs-error-display{
                             display:none;
                         }
@@ -100,7 +132,7 @@ main{
                             margin-bottom: 0.8rem;
                         }
                         p{
-                            font-size:0.97rem;
+                            font-size:1.10rem;
                             padding-left: 1rem;
                             border-left: 2px solid green;
 
@@ -110,13 +142,101 @@ main{
                         }
                     }
                 }
+                .cast{
+                    padding: 2rem;
+           
+                    #genre-detail{
+                       display:flex;
+                       flex-direction: row;
+                       height: 2.2rem;            
+                       margin-bottom: 0.8rem;
+                        li{
+                           height: 100%;
+                           text-align: center;
+                           padding-top: 0.17rem;
+                           border: 2px solid rgb(52, 173, 52);
+                           border-radius: 17px;
+                           padding: 0.65rem;
+                           line-height: 50%;
+                           &:not(:last-child){
+                               margin-right:1.4rem;
+                           }
+                       }
+
+                       &.toggleDisplay{
+                           display:none;
+                       }
+                   }
+                   
+                   #title{
+                    display:flex;
+                    flex-direction: row;
+                    height: 2.6rem;            
+                    border-bottom: 2px solid rgb(141, 223, 152);
+                    border-top: 2px solid rgb(141, 223, 152);
+                    padding:0.3rem;
+                    
+                    li{
+                        height: 100%;
+                        text-align: center;
+                        padding: 0.65rem;
+                        line-height: 50%;
+                        margin-left: 2rem;
+        
+                        &::before{
+                            position: relative;
+                            right:1.4rem;
+                            content:"\2022";
+                            color:black;
+                        }
+                        
+                    }
+                   }
+
+                   .stars{
+                    position: relative;
+                    left: 1rem;
+                   }
+                   .starring{
+                        display:flex;
+                        flex-direction: row;
+                        height: 2.6rem;            
+                        margin-bottom: 0.4rem;
+                        border-bottom: 2px solid rgb(141, 223, 152);
+                        padding:0.3rem;
+                        
+                        li{
+                            height: 100%;
+                            text-align: center;
+                            padding: 0.65rem;
+                            line-height: 50%;
+                            margin-left: 2rem;
+            
+                            &::before{
+                                position: relative;
+                                right:1.4rem;
+                                content:"\2022";
+                                color:black;
+                            }
+                            
+                       }
+                   }
+                      h4{
+                          display: inline-block;
+                          height: 100%;
+                           text-align: center;
+                           padding-top: 0.17rem;
+                           padding: 0.65rem;
+                           line-height: 50%;
+                      }
+                   }
             }
         }
         .main__section-one{
                 height:100vh;
             
             h2{
-                font-size: 1rem;
+                font-size: 1.26rem;
                 color:rgba(10,10,10,0.4);
                 font-weight: 200;
                 padding-bottom:0.82rem;
