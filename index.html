@@ -1,5 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="dist/css/style.css" class="src">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,46 +17,50 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
-    <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet"/>
-    
+    <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet" />
+
 </head>
+
 <body>
-    
+
     <header class="header">
         <nav class="nav">
-           <div class="nav__container">
+            <div class="nav__container">
                 <a href="index.html" class="nav__container-logo">
-                     <span>movieZilla</span>
-                </a> 
+                    <span>movieZilla</span>
+                </a>
                 <div class="dropdown-main">
                     <div class="dropdown">
-                        <button name="dropdown-btn" id="genre" class="dropbtn">Genre<i class="fa fa-caret-down"></i></button>
+                        <button name="dropdown-btn" id="genre" class="dropbtn">Genre<i
+                                class="fa fa-caret-down"></i></button>
                         <div id="myDropdown0" class="dropdown-content">
                             <a href="#">Action</a>
                             <a href="#">Comedy</a>
                             <a href="#">Adventure</a>
-                          </div>
-                        
+                        </div>
+
                     </div>
                     <div class="dropdown second">
-                        <button name="dropdown-btn" id="popular" class="dropbtn">Popularity<i class="fa fa-caret-down"></i></button>
+                        <button name="dropdown-btn" id="popular" class="dropbtn">Popularity<i
+                                class="fa fa-caret-down"></i></button>
                         <div id="myDropdown1" class="dropdown-content">
                             <a href="#">Ascending</a>
                             <a href="#">Descending</a>
                             <a href="#">Link 3</a>
-                          </div>
+                        </div>
                     </div>
                     <div class="dropdown">
-                        <button name="dropdown-btn" id="year" class="dropbtn">Year<i class="fa fa-caret-down"></i></button>
+                        <button name="dropdown-btn" id="year" class="dropbtn">Year<i
+                                class="fa fa-caret-down"></i></button>
                         <div id="myDropdown2" class="dropdown-content">
                             <a href="#">2022</a>
                             <a href="#">2021</a>
                             <a href="#">2020</a>
-                          </div>
+                        </div>
                     </div>
                 </div>
-                
-           </div>
+
+            </div>
             <a href="#" class="header__menu">
                 <span class="header__menu-burger"></span>
                 <span class="header__menu-burger"></span>
@@ -80,7 +85,7 @@
             </ul>
             <span class="main__aside-heads">Shelves</span>
             <ul class="main__aside-uls">
-                <li class="main__aside-uls-items"><a href="#">Your Shelves</a></li>       
+                <li class="main__aside-uls-items"><a href="#">Your Shelves</a></li>
             </ul>
             <span id="button">Create a shelf</span>
         </aside>
@@ -88,43 +93,37 @@
             <div id="movie-name">
                 <span id="case-title"></span>
                 <div class="rating">
-                  <h5>MZ rating<span id="rating-case"></span></h5>
+                    <h5>MZ rating<span id="rating-case"></span></h5>
                     <div class="stars">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                     </div>
                 </div>
             </div>
             <div class="upcoming_event">
                 <div class="img-slider">
                     <div class="slide active">
-                      <!-- <img src="./dist/Images/poster.jpg" alt=""> -->
-                      <video
-                        id="my-video"
-                        class="video-js vjs-big-play-centered"
-                        controls
-                        preload="none"
-                        width="640"
-                        height="350"
-                        poster=""
-                        data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2]
-                      }'          
-                      >
-                        <source src="hello.mp4" type="video/mp4" />
-                        <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a
-                        web browser that
-                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                        </p>
-                    </video>
-                      <div id="info">
-                        <h3>Upcoming movie</h3>
-                        <h4>Storyline</h4>
-                        <p class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
+                        <!-- <img src="./dist/Images/poster.jpg" alt=""> -->
+                        <video id="my-video" class="video-js vjs-big-play-centered" controls preload="none" width="640"
+                            height="350" poster="" data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2]
+                      }'>
+                            <source src="hello.mp4" type="video/mp4" />
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                                    video</a>
+                            </p>
+                        </video>
+                        <div id="info">
+                            <h3>Upcoming movie</h3>
+                            <h4>Storyline</h4>
+                            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </div>
                     <div class="cast">
                         <ul id="genre-detail" class=" toggleDisplay">
@@ -134,36 +133,30 @@
                             <h4>Title</h4>
                             <li><span></span></li>
                         </div>
-                        
-                        <div class="starring">
-                           <h4>Stars</h4>
-                           <li><span>Abhishek</span></li>
-                           <li><span>Sanjana</span></li>
+
+                        <div class="starring" id="starring">
+                            <h4>Stars</h4>
+                        </div>
+                        <div class="certs" id="certs">
+                            <h4>Certificate</h4>
                         </div>
 
-                        <!-- <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <div>6.2</div>
-                        </div> -->
-                      </div>
-                 </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="main__section-one">
-                
+
+           <div class="main__section-one">
+
                 <h2>Recently added</h2>
                 <div class="main__section-one-books">
                     <div class="paddles">
-                        <button class="left-paddle opacity"><</button>
-                        <button class="right-paddle opacity">></button>
+                        <button class="left-paddle opacity">
+                            <</button>
+                                <button class="right-paddle opacity">></button>
                     </div>
-                   
-                    <div class="main__section-one-books-card">
-                        <img src="dist/Images/jobs.jpg" alt="" >
+           
+                     <div class="main__section-one-books-card">
+                        <img src="dist/Images/jobs.jpg" alt="">
                         <h4><b><a href="explore_detail.html">Steve Jobs</a></b></h4>
                         <p>Walter Isaacson</p>
                         <div class="stars">
@@ -174,9 +167,9 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
-              
+
                     <div class="main__section-one-books-card">
-                        <img src="dist/Images/radical.jpg" alt="" >
+                        <img src="dist/Images/radical.jpg" alt="">
                         <h4><b>Steve Jobs</b></h4>
                         <p>Walter Isaacson</p>
                         <div class="stars">
@@ -188,7 +181,7 @@
                         </div>
                     </div>
                     <div class="main__section-one-books-card">
-                        <img src="dist/Images/enders.jpg" alt="" >
+                        <img src="dist/Images/enders.jpg" alt="">
                         <h4><b>Steve Jobs</b></h4>
                         <p>Walter Isaacson</p>
                         <div class="stars">
@@ -200,7 +193,7 @@
                         </div>
                     </div>
                     <div class="main__section-one-books-card">
-                        <img src="dist/Images/perks.jpg" alt="" >
+                        <img src="dist/Images/perks.jpg" alt="">
                         <h4><b>Steve Jobs</b></h4>
                         <p>Walter Isaacson</p>
                         <div class="stars">
@@ -211,86 +204,44 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
-                    <div class="main__section-one-books-card">
-                        <img src="dist/Images/hobbit.jpg" alt="" >
-                        <h4><b>Steve Jobs</b></h4>
-                        <p>Walter Isaacson</p>
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <div class="main__section-one-books-card">
-                        <img src="dist/Images/holby.jpg" alt="" >
-                        <h4><b>Steve Jobs</b></h4>
-                        <p>Walter Isaacson</p>
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <div class="main__section-one-books-card">
-                        <img src="dist/Images/coral.jpg" alt="" >
-                        <h4><b>Steve Jobs</b></h4>
-                        <p>Walter Isaacson</p>
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                         </div>
-                    </div>
-                    <div class="main__section-one-books-card">
-                        <img src="dist/Images/jobs.jpg" alt="" >
-                        <h4><b>Steve Jobs</b></h4>
-                        <p>Walter Isaacson</p>
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
+                   
+                   
+                </div> 
                 </div>
-         </section>
-     </main>
-     <div class="footer">
-        
-            
-            <div class="social-icons">
-                <a href="https://twitter.com/duggal_shahab" target="_blank">
-                    <i class="fab fa-twitter fa-2x"></i>
-                </a>
+        </section>
+    </main>
+    <div class="footer">
 
-                <a href="https://www.instagram.com/">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
 
-                <a href="https://github.com/Abhishek-1337" target="_blank">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
+        <div class="social-icons">
+            <a href="https://twitter.com/duggal_shahab" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
 
-                <a href="#!">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-            </div>
-            <div class="footer-copyright">
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+
+            <a href="https://github.com/Abhishek-1337" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+
+            <a href="#!">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+        </div>
+        <div class="footer-copyright">
             <p>copyright &copy; movieZilla</p>
-            </div>
+        </div>
 
     </div>
-    <script  src="dist/js/api_video.js"></script>
+    <!-- <script src="dist/js/api_video.js"></script> -->
+    <script src="dist/js/api.js"></script>
+    
     <script src="https://kit.fontawesome.com/4f71b06535.js" crossorigin="anonymous"></script>
-    <!-- <script type="module" src="dist/js/api.js"></script> -->
+    
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
     <script src="dist/js/main.js"></script>
 </body>
+
 </html>

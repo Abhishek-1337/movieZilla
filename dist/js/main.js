@@ -4,7 +4,7 @@ const searchImg = document.querySelector('#searchImg');
 const leftPaddle = document.querySelector('.left-paddle');
 const rightPaddle = document.querySelector('.right-paddle');
 const mainSec = document.querySelector('.main__section-one-books');
-const redirectToMeta = document.querySelector('.main__section-one-books-card');
+// const redirectToMeta = document.querySelector('.main__section-one-books-card');
 const movieName = document.querySelector('.main__section-one-books-card h4 b a');
 
 leftPaddle.addEventListener('click',()=>{
@@ -40,8 +40,8 @@ const btn=document.querySelectorAll('.dropdown');
      });
 });
 
-redirectToMeta.addEventListener('click',()=>{
-   console.log(movieName.innerText);
-})
+// redirectToMeta.addEventListener('click',()=>{
+//    console.log(movieName.innerText);
+// })
 
 

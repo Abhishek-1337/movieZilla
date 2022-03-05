@@ -144,7 +144,9 @@ main{
                 }
                 .cast{
                     padding: 2rem;
-           
+                    background: dimgray;
+                    height: 27rem;
+                    margin-left: 1rem;
                     #genre-detail{
                        display:flex;
                        flex-direction: row;
@@ -199,12 +201,11 @@ main{
                    }
                    .starring{
                         display:flex;
-                        flex-direction: row;
-                        height: 2.6rem;            
+                        flex-direction: row;            
                         margin-bottom: 0.4rem;
                         border-bottom: 2px solid rgb(141, 223, 152);
                         padding:0.3rem;
-                        
+                        flex-wrap: wrap;
                         li{
                             height: 100%;
                             text-align: center;
@@ -220,6 +221,31 @@ main{
                             }
                             
                        }
+                   }
+
+                   .certs{
+                    display:flex;
+                    flex-direction: row;            
+                    margin-bottom: 0.4rem;
+                    border-bottom: 2px solid rgb(141, 223, 152);
+                    padding:0.3rem;
+
+                    li{
+                        height: 100%;
+                        text-align: center;
+                        padding: 0.65rem;
+                        line-height: 50%;
+                        margin-left: 2rem;
+        
+                        &::before{
+                            position: relative;
+                            right:1.4rem;
+                            content:"\2022";
+                            color:black;
+                        }
+                        
+                   }
+
                    }
                       h4{
                           display: inline-block;

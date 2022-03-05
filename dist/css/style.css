@@ -383,6 +383,9 @@ main .main__section .upcoming_event .img-slider .slide #info p.hide {
 }
 main .main__section .upcoming_event .img-slider .cast {
   padding: 2rem;
+  background: dimgray;
+  height: 27rem;
+  margin-left: 1rem;
 }
 main .main__section .upcoming_event .img-slider .cast #genre-detail {
   display: flex;
@@ -433,10 +436,10 @@ main .main__section .upcoming_event .img-slider .cast .stars {
 main .main__section .upcoming_event .img-slider .cast .starring {
   display: flex;
   flex-direction: row;
-  height: 2.6rem;
   margin-bottom: 0.4rem;
   border-bottom: 2px solid #8ddf98;
   padding: 0.3rem;
+  flex-wrap: wrap;
 }
 main .main__section .upcoming_event .img-slider .cast .starring li {
   height: 100%;
@@ -446,6 +449,26 @@ main .main__section .upcoming_event .img-slider .cast .starring li {
   margin-left: 2rem;
 }
 main .main__section .upcoming_event .img-slider .cast .starring li::before {
+  position: relative;
+  right: 1.4rem;
+  content: "•";
+  color: black;
+}
+main .main__section .upcoming_event .img-slider .cast .certs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.4rem;
+  border-bottom: 2px solid #8ddf98;
+  padding: 0.3rem;
+}
+main .main__section .upcoming_event .img-slider .cast .certs li {
+  height: 100%;
+  text-align: center;
+  padding: 0.65rem;
+  line-height: 50%;
+  margin-left: 2rem;
+}
+main .main__section .upcoming_event .img-slider .cast .certs li::before {
   position: relative;
   right: 1.4rem;
   content: "•";
